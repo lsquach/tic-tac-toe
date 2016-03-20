@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS from CDN -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
 
     <!-- link to custom stylesheet (always require after Bootstrap) -->
-
+    <link rel="stylesheet" href="css/style.css" />
     <!-- jQuery from CDN -->
-
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
 
     <!-- link to custom javascript file (always require after external JS libraries) -->
-
+    <script rel="text/javascript" src="js/app.js"></script>
     <title>Tic Tac Toe</title>
   </head>
   <body>
@@ -35,13 +35,17 @@
           <!-- you can put rows inside of columns! -->
           <!-- Bootstrap subdivides these 'nested' rows into 12 columns, too! -->
           <div class="row">
-            <div class="col-md-4 box">a</div>
-            <div class="col-md-4 box">a</div>
-            <div class="col-md-4 box">a</div>
+            <div class="col-md-4 box" id="item7"></div>
+            <div class="col-md-4 box" id="item8"></div>
+            <div class="col-md-4 box" id="item9"></div>
+            <div class="col-md-4 box" id="item4"></div>
+            <div class="col-md-4 box" id="item5"></div>
+            <div class="col-md-4 box" id="item6"></div>
+            <div class="col-md-4 box" id="item1"></div>
+            <div class="col-md-4 box" id="item2"></div>
+            <div class="col-md-4 box" id="item3"></div>
           </div>
-
-
-
+        <button class="btn btn-default" type="submit">Reset</button>
         </div>
       </div>
     </div>
