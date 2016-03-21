@@ -31,7 +31,9 @@ $(document).ready(function() {
     }
     else {
       alert("Click on Reset to start a new game.");
-      $('h2').text(player + ' won!');
+    }
+    if (checkWin()) {
+      alert($(this).text() + ' won!');
     }
   });
   //Restarts the game
@@ -80,6 +82,7 @@ $(document).ready(function() {
     }
     //Checks for draw
     else if (turn === 8) {
+      $('h2').text("Game Over!");
       alert("It's a draw!");
       gameOn = false;
     }
