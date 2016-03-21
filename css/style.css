@@ -1,23 +1,45 @@
 #board {
   margin-top: 10px;
 }
-
-.box {
+hr {
   border: 1px solid black;
+}
+h2 {
+  text-align: center;
+}
+.box {
+  border: 1px solid white;
   height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
   font-size: 400%;
+  background-color: black;
+  color: red;
 }
 .btn {
   margin-top: 30px;
   position: absolute;
   left: 50%;
   right: -50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
+  background-color: red;
+  color: black;
+  border: 2px solid black;
+  width: 100px;
+  height: 50px;
+  font-size: 25px;
+}
+.btn:hover {
+  background: black;
+  color: white;
 }
 body {
-  background-color: gray;
+  background-color: white;
+  font-family: 'Lora', serif;
+  color: black;
+}
+.win {
+  background-color: red;
+  color: black;
 }
