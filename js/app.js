@@ -80,6 +80,7 @@ $(document).ready(function() {
     }
     //Checks for draw
     else if (turn === 8) {
+      $('h2').text("Game Over");
       alert("It's a draw!");
       gameOn = false;
     }
