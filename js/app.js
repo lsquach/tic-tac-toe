@@ -8,7 +8,8 @@ $(document).ready(function() {
   var icon = 'X';
   var player = 'Player 1';
   var gameOn = true;
-  //clicking event. Switch from X to O and draw the corresponding icon every turn, plus incrementing the turn counter
+  //Clicking event
+  // Switch from X to O, draws and increment the turn counter
   $('.box').click(function handleTurn(){
     $('h2').text("Player 2 turn");
     if($(this).html()==="" && gameOn === true){
@@ -29,11 +30,11 @@ $(document).ready(function() {
       alert("Pick another square!");
     }
     else {
-      alert("Press Reset to start over");
+      alert("Click on Reset to start a new game.");
       $('h2').text(player + ' won!');
     }
   });
-  //restart the game
+  //Restarts the game
   $('.btn').click(function handleReset(){
     $('.box').empty();
     $('.box').removeClass('win');
@@ -42,7 +43,7 @@ $(document).ready(function() {
     gameOn = true;
 
   });
-  //check if any of the winning possibilities are true
+  //Checks for possible wins
   function checkWin(){
     if ($('#item1').html()===icon && $('#item2').html()===icon && $('#item3').html()===icon ) {
       $('#item1, #item2, #item3').addClass('win');
@@ -77,15 +78,10 @@ $(document).ready(function() {
       $('h2').text(player + ' won!');
       gameOn = false;
     }
-    //check if all the squares are taken
+    //Checks for draw
     else if (turn === 8) {
       alert("It's a draw!");
       gameOn = false;
     }
   }
 });
-
-//user clicks
-//if cell is empty
-//mar x
-// else if filled, do nothing
